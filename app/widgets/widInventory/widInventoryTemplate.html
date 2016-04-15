@@ -1,0 +1,26 @@
+<div class="wid-inventory-widget">
+    <div class="wid-inventory-heading">   
+        <img class="wid-inventory-icon" ng-src="img/therm-icon.png">
+        <span class="wid-inventory-title">Inventory</span>
+    </div>
+    <div class="wid-inventory-body" style="backgroung-color: green">
+        <div class="wid-inventory-area">      
+            <div class="wid-inventory-river-name">{{selectedLocation.name}}</div>
+            <div class="wid-inventory-item">
+                <img src="/images/guide-icon.png"/>
+                <span class="wid-inventory-amount">{{selectedLocation.guides}}</span>
+                <span class="wid-inventory-caption">Guides</span>
+            </div>
+            <div class="wid-inventory-item">
+                <img src="/images/vest-icon.png"/>
+                <span class="wid-inventory-amount">{{selectedLocation.vests}}</span>
+                <span class="wid-inventory-caption">Vests</span>
+            </div>
+            <div class="wid-inventory-item">
+                <img src="/images/raft-icon.png"/>
+                <span class="wid-inventory-amount">{{selectedLocation.rafts}}</span>
+                <span class="wid-inventory-caption">Rafts</span>
+            </div>
+        </div>
+    </div>
+</div>

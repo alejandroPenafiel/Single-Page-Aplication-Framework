@@ -1,0 +1,15 @@
+<li class="spa-selectable-item" 
+	ng-class="{'spa-item-horizontal': !isVertical()}">
+	
+	<div class="spa-noselect">
+	
+		<i class="fa {{icon}} spa-menu-icon"></i>
+		{{label}}
+	
+	</div>
+	
+	<i ng-if="isActive() && isVertical()" 
+	class="fa fa-2x fa-caret-left spa-menu-active-indicator"></i>
+
+</li>
+ 

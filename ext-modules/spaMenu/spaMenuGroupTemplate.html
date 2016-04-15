@@ -1,0 +1,25 @@
+<li class="spa-selectable-item" 
+	ng-click="clicked()" 
+	ng-class="{'spa-item-horizontal': !isVertical()}">
+	
+	<div class="spa-noselect">
+	
+		<i class="fa {{icon}} spa-menu-icon"></i>
+		{{label}}
+	
+		<i ng-if="isVertical()" 
+			class="fa fa-chevron-left spa-group-indicator-left" 
+			ng-class="{'fa-rotate-270': isOpen}"></i>
+	
+	</div>
+
+</li>
+
+<div ng-show="isOpen" 
+	class="spa-subitem-section spa-fade-in-animation" 
+	ng-class="{'spa-popup-menu': !isVertical()}">
+
+	<ul ng-transclude></ul>
+
+</div>
+ 

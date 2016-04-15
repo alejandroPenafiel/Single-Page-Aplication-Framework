@@ -1,0 +1,90 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Cervezas.ec</title>
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="node_modules/angular-gridster/dist/angular-gridster.min.css" rel="stylesheet"/>
+	<link href="app/app.css" rel="stylesheet"/>
+	
+    <!--Nodes-->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-gridster/dist/angular-gridster.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script src="node_modules/ngstorage/ngStorage.min.js"></script>
+    
+	<!--Modules-->
+	<!--Menu-->
+	<script src="ext-modules/spaMenu/spaMenuModule.js"></script>
+	<script src="ext-modules/spaMenu/spaMenuController.js"></script>
+	<script src="ext-modules/spaMenu/spaMenuDirective.js"></script>
+	<script src="ext-modules/spaMenu/spaMenuItemDirective.js"></script>
+	<script src="ext-modules/spaMenu/spaMenuGroupDirective.js"></script>
+	<link href="ext-modules/spaMenu/spaMenu.css" rel="stylesheet"/>
+
+	<!--Dashboard-->
+	<script src="ext-modules/spaDashboard/spaDashboardModule.js"></script>
+    <script src="ext-modules/spaDashboard/spaDashboardDirective.js"></script>
+    <script src="ext-modules/spaDashboard/spaWidgetBodyDirective.js"></script>
+    <link href="ext-modules/spaDashboard/spaDashboard.css" rel="stylesheet"/>
+    
+
+	<!--Framework-->
+	<script src="ext-modules/spaFramework/spaFrameworkModule.js"></script>
+	<script src="ext-modules/spaFramework/spaFrameworkController.js"></script>
+	<script src="ext-modules/spaFramework/spaFrameworkDirective.js"></script>
+	<link href="ext-modules/spaFramework/spaFramework.css" rel="stylesheet"/>
+	
+    <!--App-->
+	<script src="app/appModule.js"></script>
+	<script src="app/appConfig.js"></script>
+    <script src="app/appRouteConfig.js"></script>
+    <script src="app/services/dataServices.js"></script>
+    
+    <!--Dashboard-Directives-->
+    <script src="app/directives/widDashboardDirective.js"></script>
+    <script src="app/directives/widGuidesDirective.js"></script>
+    <script src="app/directives/widLocationsDirective.js"></script>
+
+    <!--Widgets-->
+    <script src="app/widgets/widTemperature/widTemperatureDirective.js"></script>
+    <link href="app/widgets/widTemperature/widTemperature.css" rel="stylesheet"/>
+    <script src="app/widgets/widEmployee/widEmployeeDirective.js"></script>
+    <link href="app/widgets/widEmployee/widEmployee.css" rel="stylesheet"/>
+    <script src="app/widgets/widInventory/widInventoryDirective.js"></script>
+    <link href="app/widgets/widInventory/widInventory.css" rel="stylesheet"/>
+    
+    <!--Dialogs-->
+    <script src="app/dialogs/widSelectEmployeeController.js"></script>
+    <script src="app/dialogs/widSelectLocationController.js"></script>
+    
+</head>
+<body class="container-fluid">
+ 
+ 	<spa-framework title="Cervezas.ec"
+	subtitle="Administration"
+	icon-file="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xal1/v/t1.0-9/12295283_124021731298532_535397791098648313_n.jpg?oh=4190dc5e3ba6fc4c6c0092537b1428b8&oe=57833650&__gda__=1468741674_dbd7c9eb0badb50328948e012919e765">
+		
+		<spa-menu>
+
+			<spa-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></spa-menu-item>
+			<spa-menu-item label="Location" icon="fa-location-arrow" route="location"></spa-menu-item>
+			<spa-menu-item label="Guides" icon="fa-user" route="guides"></spa-menu-item>
+
+			<spa-menu-group label="Equipment" icon="fa-gears">
+				<spa-menu-item label="Rafts" icon="fa-unlink" route="rafts"></spa-menu-item>
+				<spa-menu-item label="Paddles" icon="fa-magic" route="paddles"></spa-menu-item>
+				<spa-menu-item label="Life Vests" icon="fa-life-ring" route="vests"></spa-menu-item>
+			</spa-menu-group>
+		
+		</spa-menu>
+
+	</spa-framework>
+
+</body>
+</html>

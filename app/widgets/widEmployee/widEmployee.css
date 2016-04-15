@@ -1,0 +1,49 @@
+.wid-employee-widget {
+    height: 100%;
+    width: 100%;
+    min-height: 180px;
+    font-size: 14px;
+    color: black;
+}
+.wid-employee-heading {
+    position: relative;
+    color: white;
+    background-color: #4183ff;
+    font-size: 16px;
+    min-height: 30px;
+    padding: 8px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+.wid-employee-icon {
+    height: 24px;
+    width: 24px;
+    margin-top: -2px;
+}
+.wid-employee-body {
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-height: 180px;
+}
+.wid-employee-view {
+    background-color: aliceblue;
+    position: absolute;
+    right: 5px;
+    bottom: 38px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.wid-employee-river-name {
+    height: 30px;
+    font-size: 14px;
+    margin-top: 8px;
+}
+.wid-employee-degrees {
+    font-size: 64px;
+    margin-top: -20px;
+}

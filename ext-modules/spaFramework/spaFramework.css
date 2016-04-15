@@ -1,0 +1,73 @@
+.spa-title-bar {
+	background-color: white;
+	padding: 0 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.spa-logo-area {
+	text-align: center;
+}
+.spa-title-area {
+	display: inline-block;
+}
+.spa-icon {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 8px;
+	vertical-align: top;
+/*    border: 1px solid #e0e0e0;*/
+}
+.spa-logo-title {
+	color: #111;
+	margin-top: 6px;
+	font-size: 22px;
+}
+@media screen and (max-width:430px) {
+	.spa-icon{
+		display: none;
+	}
+	.spa-logo-title{
+		font-size: 18px;
+	}
+}
+.spa-logo-subtitle {
+	font-size: 11px;
+	margin-top: -13px;
+}
+.spa-right-side-controls {
+	line-height: 60px;
+}
+.spa-right-side-controls > div {
+	text-align: center;
+}
+@media screen and (min-width:768px) {
+	.spa-right-side-controls > div {
+		text-align: right;
+	}
+	.spa-logo-area {
+		text-align: left;
+	}
+}
+.spa-collapsed-menu {
+	display: inline-block;
+	height: 100%;
+}
+.spa-nav-button {
+	height: 40px;
+	width: 60px;
+	margin-top: 10px;
+	border: 1px solid #888;
+	padding: 0;
+	font-size: 26px;
+	color: #777;
+}
+.spa-view {
+    margin-left: 200px;
+    padding: 20px;
+    background-color: white;
+    min-height: 100vh;
+    overflow: auto;
+}
+.spa-view-full-width {
+    margin-left: 0;
+}
